@@ -11,6 +11,7 @@ def map(array)
   new_array
 end
 
+# reduces array to one value
 def reduce(array, starting_point = nil)
   if starting_point
     counter = 0

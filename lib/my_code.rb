@@ -11,7 +11,7 @@ def map(array)
   new_array
 end
 
-def reduce(array, reduce_value*)
+def reduce(array, reduce_value = 0)
   counter = 0
 
   while counter < array.length do

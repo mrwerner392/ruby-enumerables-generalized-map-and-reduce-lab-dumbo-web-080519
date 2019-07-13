@@ -14,7 +14,7 @@ end
 def reduce(array, starting_point = nil)
   if starting_point
     counter = 0
-    total = starting_[point]
+    total = starting_point
   else
     counter = 1
     total = array.first

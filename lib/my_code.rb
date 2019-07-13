@@ -11,13 +11,19 @@ def map(array)
   new_array
 end
 
-def reduce(array, reduce_value = 0)
-  counter = 0
+def reduce(array, starting_point = nil)
+  if starting_point
+    counter = 0
+    total = starting_[point]
+  else
+    counter = 1
+    total = array.first
+  end
 
   while counter < array.length do
-    reduce_value = yield(reduce_value, array[counter])
+    total = yield(total, array[counter])
     counter += 1
   end
 
-  reduce_value
+  total
 end
